@@ -1,0 +1,5 @@
+from pprint import pprint
+import requests
+
+r = requests.get('http://api.openweathermap.org/data/2.5/weather?q=Brunswick&APPID=4ecd14c65c16cdd7d14fa8a27cf4220a')
+pprint(r.json())
